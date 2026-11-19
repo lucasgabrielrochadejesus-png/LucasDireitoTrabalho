@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: apostila-direito-do-trabalho
+    runtime: static
+    buildCommand: "true"
+    staticPublishPath: ./public
+    envVars:
+      - key: SKIP_INSTALL_DEPS
+        value: "true"
